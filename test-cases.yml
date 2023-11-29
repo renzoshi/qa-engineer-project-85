@@ -66,4 +66,79 @@
   expected-result: |
     пользователь неавторизирован. в окне авторизации отображается EMAIL_NOT_FOUND
 
-  
+- summary: |
+    Проверка авторизации пользователя с несуществующим логином и паролем 
+  requirement: |
+    невозможность авторизации пользователя 
+  prerequisites: |
+    Открыта главная страница веб-сайта 
+  test-data: |
+    почта - bankai909@mail.ru
+    пароль - idontknow
+  steps:
+    - на главной странице вебсайта нажимаем sign in
+    - в окно e-mail вводим bankai909@mail.ru
+    - в окно Password вводим idontknow
+  expected-result: |
+    пользователь неавторизирован. в окне авторизации отображается EMAIL_NOT_FOUND
+
+- summary: |
+    Проверка корректного отображения веб-сайта в браузере "Google Chrome"
+  requirement: |
+    Корректное отображение веб-сайта 
+  prerequisites: |
+    Открыта Главная страница веб-сайта в браузере "Google Chrome" ver. 118.0.5993.118  
+  test-data: |
+    Google Chrome ver 118.0.5993.118
+  steps:
+    - открываем браузер "Google Chrome"
+    - в адресное окно вводим адрес https://codebattle.hexlet.io/
+    - нажимаем перейти (enter)
+  expected-result: |
+    Веб-сайт корректно отображается 
+
+- summary: |
+    Проверка корректного отображения веб-сайта в браузере "Microsoft Edge"
+  requirement: |
+    Корректное отображение веб-сайта 
+  prerequisites: |
+    Открыта Главная страница веб-сайта в браузере "Microsoft Edge" ver. 118.0.2088.69  
+  test-data: |
+    Microsoft Edge ver 118.0.2088.69 
+  steps:
+    - открываем браузер "Microsoft Edge"
+    - в адресное окно вводим адрес https://codebattle.hexlet.io/
+    - нажимаем перейти (enter)
+  expected-result: |
+    Веб-сайт корректно отображается
+
+- summary: |
+    Проверка корректного отображения веб-сайта в браузере "Яндекс Браузер"
+  requirement: |
+    Корректное отображение веб-сайта 
+  prerequisites: |
+    Открыта Главная страница веб-сайта в браузере "Яндекс Браузер" ver. 23.9.3.933  
+  test-data: |
+    Яндекс Браузер ver 23.9.3.933 
+  steps:
+    - открываем браузер "Яндекс Браузер"
+    - в адресное окно вводим адрес https://codebattle.hexlet.io/
+    - нажимаем перейти (enter)
+  expected-result: |
+    Веб-сайт корректно отображается
+
+- summary: |
+    Проверка корректного отображения веб-сайта в браузере "Safari" на Iphone13
+  requirement: |
+    Корректное отображение веб-сайта 
+  prerequisites: |
+    Открыта Главная страница веб-сайта в браузере "Safari" ver. 16.5.2   
+  test-data: |
+    Safari ver 16.5.2  
+  steps:
+    - открываем браузер "Safari" на iPhone 13 
+    - в адресное окно вводим адрес https://codebattle.hexlet.io/
+    - нажимаем перейти 
+  expected-result: |
+    Веб-сайт корректно отображается
+
