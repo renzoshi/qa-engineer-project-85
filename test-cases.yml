@@ -142,3 +142,36 @@
   expected-result: |
     Веб-сайт корректно отображается
 
+- summary: |
+    Проверка участия в игре без регистрации
+  requirement: |
+    Пользователь получил доступ к игре без регистрации 
+  prerequisites: |
+    Открыта Главная страница веб-сайта 
+  test-data: |
+    -
+  steps:
+    - открываем главную страницу веб-сайта без авторизации
+    - нажимаем TRY SIMPLE BATTLE 
+  expected-result: |
+    Отображается игра. Незарегистрированный пользователь начал игру с ботом 
+
+- summary: |
+    Проверка создания игры (баттла) 
+  requirement: |
+    В лобби отображается созданная игра 
+  prerequisites: |
+    Открыто лобби веб-сайта
+  test-data: |
+    level - 1 звезда, game type - with a bot, time control - 8 min, Choose task by name or tags - random task
+  steps:
+    - открываем лобби 
+    - нажимаем  CRATE A GAME 
+    - выбираем level - 1 
+    - выбираем with a bot 
+    - выбираем 8 min 
+    - выбираем random task 
+    - нажимаем Create battle 
+  expected-result: |
+    Игра успешно создана, идет игровой процесс. Созданный баттл отображается в лобби 
+    
