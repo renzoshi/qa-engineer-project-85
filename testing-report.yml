@@ -71,6 +71,10 @@
   status: pass
 
 - summary: |
+    Проверка возможности писать код в игре  
+  status: pass
+
+- summary: |
      Проверка механики победы в игре  
   status: pass
 
@@ -100,10 +104,6 @@
 
 - summary: |
     Проверка возврата в созданную игру 
-  status: pass
-
-- summary: |
-    Проверка возможности писать код в игре  
   status: pass
 
 - summary: |
